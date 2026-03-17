@@ -1,0 +1,29 @@
+{
+  "platform": "instagram",
+  "version": 1,
+  "saved": {
+    "itemSelectors": "a[href^=\"/p/\"], a[href^=\"/reel/\"], a[href^=\"/tv/\"]",
+    "mediaPathPattern": "^\\/(?:p|reel|tv)\\/[\\w-]+\\/?$",
+    "excludePathPattern": "/stories/",
+    "thumbnailSelector": "img",
+    "altTextSkipPatterns": [
+      "^(Photo|Video|Reel|Image)\\s+by\\s+",
+      "^May be\\s+(a|an)\\s+"
+    ],
+    "hashtagOnlyPattern": "^#",
+    "scroll": {
+      "waitMs": 1200,
+      "maxIterations": 120,
+      "maxStableRounds": 10,
+      "maxRuntimeMs": 120000
+    }
+  },
+  "collections": {
+    "usernamePathPattern": "^\\/([a-zA-Z0-9._]{1,30})\\/saved\\/?$",
+    "collectionPathTemplate": "^\\/{{username}}\\/saved\\/(.+?)\\/?$",
+    "excludedSlugs": ["all-posts"],
+    "nameCleanupPattern": "\\d+\\s*(items?|posts?|개)?$",
+    "thumbnailSelector": "img",
+    "scroll": { "waitMs": 1000, "maxIterations": 30, "maxStableRounds": 6 }
+  }
+}

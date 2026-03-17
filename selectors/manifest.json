@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "platforms": {
+    "youtube":   { "version": 1, "updatedAt": "2026-03-17" },
+    "instagram": { "version": 1, "updatedAt": "2026-03-17" },
+    "pinterest": { "version": 1, "updatedAt": "2026-03-17" },
+    "tiktok":    { "version": 1, "updatedAt": "2026-03-17" }
+  }
+}

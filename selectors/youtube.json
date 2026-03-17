@@ -1,0 +1,36 @@
+{
+  "platform": "youtube",
+  "version": 1,
+  "watchLater": {
+    "itemContainer": "ytd-playlist-video-renderer",
+    "urlSelectors": ["a#thumbnail", "a#video-title", "a[href*=\"/watch?v=\"]"],
+    "titleSelector": "#video-title",
+    "titleAttribute": "title",
+    "channelSelectors": ["#channel-name a", "ytd-channel-name a"],
+    "thumbnailSelector": "ytd-thumbnail img",
+    "scroll": { "step": 1400, "delayMs": 250, "stableLimit": 6 }
+  },
+  "playlists": {
+    "strategies": [
+      { "containerSelector": "ytd-grid-playlist-renderer" },
+      { "containerSelector": "ytd-rich-item-renderer" },
+      { "containerSelector": "ytd-playlist-renderer" },
+      { "containerSelector": null, "linkSelector": "a[href*=\"/playlist?list=\"]" }
+    ],
+    "playlistLinkSelector": "a[href*=\"/playlist?list=\"]",
+    "listIdPattern": "[?&]list=([\\w-]+)",
+    "excludedListIds": ["WL", "LL"],
+    "titleSelectors": ["#video-title", "h3 a", "a[title]"],
+    "countSelector": "#overlays .ytd-thumbnail-overlay-side-panel-renderer",
+    "thumbnailSelector": "img",
+    "scroll": { "step": 1400, "delayMs": 300, "stableLimit": 6 }
+  },
+  "login": {
+    "selectors": [
+      "a[href*=\"accounts.google.com/ServiceLogin\"]",
+      "tp-yt-paper-button[aria-label*=\"Sign in\"]",
+      "a[href*=\"accounts.google.com\"]"
+    ],
+    "contentPresenceSelector": "ytd-playlist-video-renderer"
+  }
+}

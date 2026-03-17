@@ -1,0 +1,40 @@
+{
+  "platform": "pinterest",
+  "version": 1,
+  "saved": {
+    "itemSelector": "a[href*=\"/pin/\"]",
+    "pinPathPattern": "^\\/pin\\/[\\w-]+\\/?$",
+    "thumbnailSelector": "img",
+    "scroll": {
+      "waitMs": 1200,
+      "maxIterations": 120,
+      "maxStableRounds": 10,
+      "maxRuntimeMs": 120000
+    }
+  },
+  "boards": {
+    "usernamePathPattern": "^\\/([a-zA-Z0-9._-]{2,30})\\/_boards\\/?$",
+    "boardCardSelector": "[data-test-id=\"profile-board-card\"]",
+    "boardTitleSelector": "[data-test-id=\"board-card-title\"]",
+    "boardSlugPattern": "^\\/{{username}}\\/([^_/][^/]*)\\/?$",
+    "pinCountPattern": "(\\d+)\\s*Pins?",
+    "nameCleanupPattern": ",\\s*\\d+\\s*Pins?.*$",
+    "reservedSlugs": [
+      "pin", "search", "today", "business", "ideas",
+      "about", "privacy", "terms", "settings", "login",
+      "newsroom", "policy", "help", "categories",
+      "explore", "create", "notifications", "messages"
+    ],
+    "thumbnailSelector": "img",
+    "scroll": { "waitMs": 1000, "maxIterations": 30, "maxStableRounds": 6 }
+  },
+  "login": {
+    "selectors": [
+      "[data-test-id=\"simple-login-button\"]",
+      "button[data-test-id=\"login-button\"]",
+      "a[href*=\"/login/\"]",
+      "[data-test-id=\"signup-button\"]"
+    ],
+    "contentPresenceSelector": "a[href*=\"/pin/\"]"
+  }
+}
