@@ -1,6 +1,6 @@
 {
   "platform": "instagram",
-  "version": 1,
+  "version": 2,
   "saved": {
     "itemSelectors": "a[href^=\"/p/\"], a[href^=\"/reel/\"], a[href^=\"/tv/\"]",
     "mediaPathPattern": "^\\/(?:p|reel|tv)\\/[\\w-]+\\/?$",
@@ -13,9 +13,9 @@
     "hashtagOnlyPattern": "^#",
     "scroll": {
       "waitMs": 1200,
-      "maxIterations": 120,
+      "maxIterations": 300,
       "maxStableRounds": 10,
-      "maxRuntimeMs": 120000
+      "maxRuntimeMs": 300000
     }
   },
   "collections": {

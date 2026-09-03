@@ -1,0 +1,29 @@
+{
+  "platform": "threads",
+  "version": 1,
+  "saved": {
+    "itemContainer": "[data-pressable-container=\"true\"]",
+    "postLinkSelector": "a[href*=\"/post/\"]",
+    "postPathPattern": "^\\/@[\\w.]+\\/post\\/[\\w-]+",
+    "textSelector": "span[dir=\"auto\"]",
+    "metaTextPattern": "^(?:\\d+(?:[.,]\\d+)?\\s*[KMB만천]?|\\d+[smhdwy])$",
+    "thumbnailSelector": "img",
+    "profileImageAltPattern": "profile picture|프로필 사진",
+    "videoSelector": "video",
+    "hashtagOnlyPattern": "^#",
+    "scroll": {
+      "waitMs": 1200,
+      "maxIterations": 300,
+      "maxStableRounds": 10,
+      "maxRuntimeMs": 300000
+    }
+  },
+  "login": {
+    "selectors": [
+      "input[autocomplete=\"current-password\"]",
+      "input[name=\"password\"]",
+      "a[href^=\"/login\"]"
+    ],
+    "contentPresenceSelector": "a[href*=\"/post/\"]"
+  }
+}

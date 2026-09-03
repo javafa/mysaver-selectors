@@ -10,6 +10,7 @@ selectors/
   youtube.json       ← YouTube 셀렉터
   instagram.json     ← Instagram 셀렉터
   pinterest.json     ← Pinterest 셀렉터
+  threads.json       ← Threads 셀렉터
 ```
 
 ## 브랜치 전략

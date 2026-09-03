@@ -1,15 +1,15 @@
 {
   "platform": "pinterest",
-  "version": 1,
+  "version": 2,
   "saved": {
     "itemSelector": "a[href*=\"/pin/\"]",
     "pinPathPattern": "^\\/pin\\/[\\w-]+\\/?$",
     "thumbnailSelector": "img",
     "scroll": {
       "waitMs": 1200,
-      "maxIterations": 120,
+      "maxIterations": 300,
       "maxStableRounds": 10,
-      "maxRuntimeMs": 120000
+      "maxRuntimeMs": 300000
     }
   },
   "boards": {
