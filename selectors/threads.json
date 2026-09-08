@@ -1,6 +1,6 @@
 {
   "platform": "threads",
-  "version": 1,
+  "version": 2,
   "saved": {
     "itemContainer": "[data-pressable-container=\"true\"]",
     "postLinkSelector": "a[href*=\"/post/\"]",
@@ -12,6 +12,7 @@
     "videoSelector": "video",
     "hashtagOnlyPattern": "^#",
     "scroll": {
+      "step": 600,
       "waitMs": 1200,
       "maxIterations": 300,
       "maxStableRounds": 10,

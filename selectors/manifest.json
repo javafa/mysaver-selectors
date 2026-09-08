@@ -4,6 +4,6 @@
     "youtube":   { "version": 1, "updatedAt": "2026-03-17" },
     "instagram": { "version": 2, "updatedAt": "2026-09-03" },
     "pinterest": { "version": 2, "updatedAt": "2026-09-03" },
-    "threads":   { "version": 1, "updatedAt": "2026-09-03" }
+    "threads":   { "version": 2, "updatedAt": "2026-09-07" }
   }
 }
