@@ -1,8 +1,8 @@
 {
   "platform": "instagram",
-  "version": 2,
+  "version": 3,
   "saved": {
-    "itemSelectors": "a[href^=\"/p/\"], a[href^=\"/reel/\"], a[href^=\"/tv/\"]",
+    "itemSelectors": "a[href*=\"/p/\"], a[href*=\"/reel/\"], a[href*=\"/tv/\"]",
     "mediaPathPattern": "^\\/(?:p|reel|tv)\\/[\\w-]+\\/?$",
     "excludePathPattern": "/stories/",
     "thumbnailSelector": "img",

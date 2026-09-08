@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "platforms": {
     "youtube":   { "version": 1, "updatedAt": "2026-03-17" },
-    "instagram": { "version": 2, "updatedAt": "2026-09-03" },
+    "instagram": { "version": 3, "updatedAt": "2026-09-08" },
     "pinterest": { "version": 2, "updatedAt": "2026-09-03" },
     "threads":   { "version": 2, "updatedAt": "2026-09-07" }
   }
